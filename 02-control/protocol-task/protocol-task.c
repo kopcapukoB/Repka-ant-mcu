@@ -18,22 +18,15 @@ void protocol_task_init(api_t* device_api)
 }
 
 void protocol_task_handle(char* command_string)
-
 {
-//	Добавляем в обработчик проверку на то, что `command_string` не равно `NULL`.
-//	Если `command_string` равно `NULL`, то выйти из обработчика: строка команды
-//	еще не получена;
     if (!command_string)
     {
         return;
     }
-
-// логика обработки полученной строки. Делим ее на команду и аргументы:
     const char* command_name = command_string;
     const char* command_args = NULL;
 
     char* space_symbol = strchr(command_string, ' ');
-
     if (space_symbol)
     {
         *space_symbol = '\0';
@@ -43,11 +36,7 @@ void protocol_task_handle(char* command_string)
     {
         command_args = "";
     }
-
-
     printf("command: '%s', args: '%s'\n", command_name, command_args);
-// в цикле проходим по массиву команд `api` и ищем совпадение имени команды;
-
     for (int i = 0; i < commands_count; i++)
     {
         if (strcmp(command_name, api[i].command_name) != 0)

@@ -11,6 +11,7 @@ int command_buf_idx;
 void stdio_task_init()
 {
 	command_buf_idx = 0;
+    stdio_init_all();
 }
 
 char* stdio_task_handle()

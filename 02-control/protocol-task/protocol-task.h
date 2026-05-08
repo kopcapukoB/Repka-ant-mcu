@@ -1,4 +1,4 @@
-#pragma once
+#pragma once // директива препроцессора для предотвращения многократного включения заголовочного файла
 
 typedef void(*command_callback_t)(const char* args);
 

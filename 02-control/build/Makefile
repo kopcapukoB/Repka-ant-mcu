@@ -2023,6 +2023,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/02_control.dir/build.make CMakeFiles/02_control.dir/main.c.s
 .PHONY : main.c.s
 
+mem-wmem-task/mem-wmem-task.obj: mem-wmem-task/mem-wmem-task.c.obj
+.PHONY : mem-wmem-task/mem-wmem-task.obj
+
+# target to build an object file
+mem-wmem-task/mem-wmem-task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02_control.dir/build.make CMakeFiles/02_control.dir/mem-wmem-task/mem-wmem-task.c.obj
+.PHONY : mem-wmem-task/mem-wmem-task.c.obj
+
+mem-wmem-task/mem-wmem-task.i: mem-wmem-task/mem-wmem-task.c.i
+.PHONY : mem-wmem-task/mem-wmem-task.i
+
+# target to preprocess a source file
+mem-wmem-task/mem-wmem-task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02_control.dir/build.make CMakeFiles/02_control.dir/mem-wmem-task/mem-wmem-task.c.i
+.PHONY : mem-wmem-task/mem-wmem-task.c.i
+
+mem-wmem-task/mem-wmem-task.s: mem-wmem-task/mem-wmem-task.c.s
+.PHONY : mem-wmem-task/mem-wmem-task.s
+
+# target to generate assembly for a file
+mem-wmem-task/mem-wmem-task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02_control.dir/build.make CMakeFiles/02_control.dir/mem-wmem-task/mem-wmem-task.c.s
+.PHONY : mem-wmem-task/mem-wmem-task.c.s
+
 protocol-task/protocol-task.obj: protocol-task/protocol-task.c.obj
 .PHONY : protocol-task/protocol-task.obj
 
@@ -2313,6 +2337,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mem-wmem-task/mem-wmem-task.obj"
+	@echo "... mem-wmem-task/mem-wmem-task.i"
+	@echo "... mem-wmem-task/mem-wmem-task.s"
 	@echo "... protocol-task/protocol-task.obj"
 	@echo "... protocol-task/protocol-task.i"
 	@echo "... protocol-task/protocol-task.s"

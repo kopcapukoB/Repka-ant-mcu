@@ -161,6 +161,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/02_control.dir/led-task/led-task.c.obj.d"
   "CMakeFiles/02_control.dir/main.c.obj"
   "CMakeFiles/02_control.dir/main.c.obj.d"
+  "CMakeFiles/02_control.dir/mem-wmem-task/mem-wmem-task.c.obj"
+  "CMakeFiles/02_control.dir/mem-wmem-task/mem-wmem-task.c.obj.d"
   "CMakeFiles/02_control.dir/protocol-task/protocol-task.c.obj"
   "CMakeFiles/02_control.dir/protocol-task/protocol-task.c.obj.d"
   "CMakeFiles/02_control.dir/stdio-task/stdio-task.c.obj"
