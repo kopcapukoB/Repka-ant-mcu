@@ -1,0 +1,15 @@
+include(${CMAKE_SOURCE_DIR}/pico_sdk_import.cmake)
+
+add_library(protocol STATIC
+    src/protocol-task.c
+)
+
+target_link_libraries(protocol
+    PUBLIC
+    pico_stdlib
+)
+
+target_include_directories(protocol
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
