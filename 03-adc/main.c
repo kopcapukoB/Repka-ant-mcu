@@ -43,7 +43,6 @@ void led_blink_set_period_ms_callback(const char* args)
     led_task_set_blink_period_ms(period_ms);
 }
 
-// Чтение напряжения с АЦП
 void adc_voltage_callback(const char* args)
 {
     float voltage = adc_task_get_voltage();
@@ -56,26 +55,23 @@ void adc_temp_callback(const char* args)
     printf("%.2f\n", temp);
 }
 
-// Запуск непрерывного мониторинга АЦП
-void adc_monitor_start_callback(const char* args)
+void tm_start_callback(const char* args)
 {
     adc_task_set_state(ADC_TASK_STATE_RUN);
-    printf("ADC monitoring started\n");
+    printf("Measurements started\n");
 }
 
-// Остановка мониторинга АЦП
-void adc_monitor_stop_callback(const char* args)
+void tm_stop_callback(const char* args)
 {
     adc_task_set_state(ADC_TASK_STATE_IDLE);
-    printf("ADC monitoring stopped\n");
+    printf("Measurements stopped\n");
 }
 
-// Показать оба значения сразу
 void adc_all_callback(const char* args)
 {
     float voltage = adc_task_get_voltage();
     float temp = adc_task_get_temp();
-    printf("Voltage: %.3f V | Temperature: %.2f °C\n", voltage, temp);
+    printf("%.3f %.2f\n", voltage, temp);
 }
 
 void help_callback(const char* args);
@@ -119,9 +115,9 @@ api_t device_api[] =
     {"wmem",        wmem_callback,                     "write memory: wmem <hex_addr> <hex_value>"},
     {"get_adc",     adc_voltage_callback,              "read ADC voltage"},
     {"get_temp",    adc_temp_callback,                 "read temperature"},
-    {"monitor",     adc_monitor_start_callback,        "start ADC monitoring"},
-    {"mon_stop",    adc_monitor_stop_callback,         "stop ADC monitoring"},
     {"all",         adc_all_callback,                  "show voltage and temperature"},
+    {"tm_start",    tm_start_callback,                 "start continuous measurements"},
+    {"tm_stop",     tm_stop_callback,                  "stop continuous measurements"},
     {NULL, NULL, NULL},
 };
 
