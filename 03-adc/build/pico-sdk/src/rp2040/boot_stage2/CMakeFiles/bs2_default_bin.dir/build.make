@@ -53,10 +53,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control
+CMAKE_SOURCE_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build
+CMAKE_BINARY_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/progress.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2 && "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin/arm-none-eabi-objcopy.exe" -Obinary C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2 && "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin/arm-none-eabi-objcopy.exe" -Obinary C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/codegen:
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/codegen
@@ -85,10 +85,10 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_defaul
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2040/boot_stage2 C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2 C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)" bs2_default_bin
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2040/boot_stage2 C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2 C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)" bs2_default_bin
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

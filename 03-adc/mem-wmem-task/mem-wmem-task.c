@@ -7,9 +7,7 @@
 
 void mem(uint32_t addr)
 {
-    uint32_t* ptr    = (uint32_t*)addr; 
-    uint32_t  value  = *ptr;
-
+    uint32_t value = *(volatile uint32_t*)addr;
     printf("mem[0x%08X] = 0x%08X\n", addr, value);
 }
 

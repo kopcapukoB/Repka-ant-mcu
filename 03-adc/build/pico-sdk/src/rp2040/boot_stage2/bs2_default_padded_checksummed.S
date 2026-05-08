@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

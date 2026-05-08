@@ -53,10 +53,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control
+CMAKE_SOURCE_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build
+CMAKE_BINARY_DIR = C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h: C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2_common/pico_cyw43_driver && ../../../../pioasm-install/pioasm/pioasm.exe -o c-sdk -v 0 C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2_common/pico_cyw43_driver && ../../../../pioasm-install/pioasm/pioasm.exe -o c-sdk -v 0 C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/codegen:
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/codegen
@@ -85,10 +85,10 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
+	cd C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_cyw43_driver C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2_common/pico_cyw43_driver C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/02-control/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake "--color=$(COLOR)" cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_cyw43_driver C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2_common/pico_cyw43_driver C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/03-adc/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake "--color=$(COLOR)" cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 
