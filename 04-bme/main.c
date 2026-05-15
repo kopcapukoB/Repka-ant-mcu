@@ -129,6 +129,42 @@ void write_reg_callback(const char* args)
     printf("BME280: wrote 0x%02X to register 0x%02X\n", (uint8_t)value, (uint8_t)addr);
 }
 
+void temp_raw_callback(const char* args)
+{
+    uint32_t temp = bme280_read_temp_raw();
+    printf("Temperature raw: %lu\n", temp);
+}
+
+void pres_raw_callback(const char* args)
+{
+    uint32_t pres = bme280_read_pres_raw();
+    printf("Pressure raw: %lu\n", pres);
+}
+
+void hum_raw_callback(const char* args)
+{
+    uint16_t hum = bme280_read_hum_raw();
+    printf("Humidity raw: %u\n", hum);
+}
+
+void temp_callback(const char* args)
+{
+    float temp = bme280_read_temperature();
+    printf("Temperature: %.2f °C\n", temp);
+}
+
+void pres_callback(const char* args)
+{
+    float pres = bme280_read_pressure();
+    printf("Pressure: %.2f hPa\n", pres);
+}
+
+void hum_callback(const char* args)
+{
+    float hum = bme280_read_humidity();
+    printf("Humidity: %.2f %%RH\n", hum);
+}
+
 void help_callback(const char* args);
 
 void mem_callback(const char* args)
@@ -168,6 +204,12 @@ api_t device_api[] =
     {"wmem",        wmem_callback,                 "write memory: wmem <hex_addr> <hex_value>"},
     {"read_regs",   read_regs_callback,            "read BME280 registers: read_regs <addr> <count>"},
     {"write_reg",   write_reg_callback,            "write BME280 register: write_reg <addr> <value>"},
+    {"temp_raw",    temp_raw_callback,             "get raw temperature value"},
+    {"pres_raw",    pres_raw_callback,             "get raw pressure value"},
+    {"hum_raw",     hum_raw_callback,              "get raw humidity value"},
+    {"temp",        temp_callback,                 "get temperature in °C"},
+    {"pres",        pres_callback,                 "get pressure in hPa"},
+    {"hum",         hum_callback,                  "get humidity in %RH"},
     {NULL, NULL, NULL},
 };
 

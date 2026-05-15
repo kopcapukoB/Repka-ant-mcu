@@ -88,7 +88,7 @@ CMakeFiles/04_bme.dir/main.c.obj: \
  C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
  C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
  C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/stdio-task/stdio-task.h \
- C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/libs/protocol/include/protocol-task.h \
- C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/libs/bme280-driver/include/bme280-driver.h \
+ c:\users\kopcapuk\repositories\pico\repka-ant-mcu\libs\protocol\include\protocol-task.h \
+ c:\users\kopcapuk\repositories\pico\repka-ant-mcu\libs\bme280-driver\include\bme280-driver.h \
  C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/led-task/led-task.h \
  C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/mem-wmem-task/mem-wmem-task.h

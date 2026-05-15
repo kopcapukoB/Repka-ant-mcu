@@ -86,6 +86,12 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/../libs/bme280-driver"
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/../libs/bme280-driver/include"
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/../libs/protocol/include"
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/stdio-task"
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/led-task"
+  "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/mem-wmem-task"
   "C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/libs/protocol/include"
   "C:/Users/kopcapuk/Repositories/pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "C:/Users/kopcapuk/Repositories/pico/pico-sdk/lib/tinyusb/src"

@@ -19,6 +19,15 @@ add_executable(${PROJECT_NAME}
     ${CMAKE_CURRENT_SOURCE_DIR}/mem-wmem-task/mem-wmem-task.c
 )
 
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../libs/bme280-driver
+    ${CMAKE_CURRENT_SOURCE_DIR}/../libs/bme280-driver/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../libs/protocol/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/stdio-task
+    ${CMAKE_CURRENT_SOURCE_DIR}/led-task
+    ${CMAKE_CURRENT_SOURCE_DIR}/mem-wmem-task
+)
+
 target_link_libraries(${PROJECT_NAME}
     protocol
     bme280_driver

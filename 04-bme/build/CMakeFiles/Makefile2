@@ -2345,8 +2345,8 @@ protocol_build/clean: protocol_build/CMakeFiles/protocol.dir/clean
 
 # All Build rule for target.
 CMakeFiles/04_bme.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
-CMakeFiles/04_bme.dir/all: bme280_build/CMakeFiles/bme280_driver.dir/all
 CMakeFiles/04_bme.dir/all: protocol_build/CMakeFiles/protocol.dir/all
+CMakeFiles/04_bme.dir/all: bme280_build/CMakeFiles/bme280_driver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_bme.dir/build.make CMakeFiles/04_bme.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/04_bme.dir/build.make CMakeFiles/04_bme.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Users/kopcapuk/Repositories/pico/Repka-ant-mcu/04-bme/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target 04_bme"
