@@ -32,6 +32,14 @@
 #define ILI9341_NATIVE_WIDTH 240u
 #define ILI9341_NATIVE_HEIGHT 320u
 
+/* ── Color conversion macro ──────────────────────────────────────────── */
+/* RGB888 to RGB565: RRRRRRRR GGGGGGGG BBBBBBBB -> RRRRR GGGGGG BBBBB */
+#define RGB888_2_RGB565(rgb) ( \
+    (((rgb) & 0x00F80000u) >> 8u)  | \
+    (((rgb) & 0x0000FC00u) >> 5u)  | \
+    (((rgb) & 0x000000F8u) >> 3u)    \
+)
+
 typedef void (*ili9341_spi_write)(const uint8_t* data, uint32_t size);
 typedef void (*ili9341_spi_read)(uint8_t* buffer, uint32_t length);
 typedef void (*ili9341_gpio_cs_write)(bool level);      /* Chip Select  — active LOW  */
